@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+    <center>
+        <div id = "white">
+    <title> Select Order </title>
+    <link href = "css/style.css" type = "text/css" rel = "stylesheet"/>
+    <p style = "font-family:sans-serif, helvetica; font-style: italic;">
+
+    <body>
+        <h2>Categories of Food</h2>
+        
+        <img src = "https://image.freepik.com/free-vector/modern-menu-restaurant-grill_1361-1526.jpg" height = "300"></img>
+        <br>
+        <p>In your requested location, these are available options:</p>
+        
+        <h2>Let us make your order!</h2>
+            <p> The several options on the SJSU campus are:</p>
+            
+            <h3 id = "pandaexpress">Panda Express</h3>
+            <h4 id = "appetizers">Appetizer</h4>
+            <form method = "post" action = "mobile_payment">
+            <input type = "checkbox" name = "order1" value = "Chicken Egg Roll"/> Chicken Egg Roll
+            <input type = "checkbox" name = "order1" value = "Veggie Spring Roll (2 pcs)"/> Veggie Spring Roll (2 pcs)
+            <br>
+            <input type = "checkbox" name = "order1" value = "Cream Cheese Rangoon"/> Cream Cheese Rangoon
+            <input type = "checkbox" name = "order1" value = "Chicken Potstickers"/> Chicken Potstickers
+            <br><br>
+            <h4 id = "own">Build Your Own</h4>
+            <input type = "checkbox" name = "order2" value = "Bowl"/> Bowl
+            <input type = "checkbox" name = "order2" value = "Plate"/> Plate
+            <input type = "checkbox" name = "order2" value = "Bigger Plate"/> Bigger Plate
+            <br><br>
+            <h4 id = "entrees">Entrees</h4>
+            <input type = "checkbox" name = "order3" value = "Orange Chicken"/> Orange Chicken
+            <input type = "checkbox" name = "order3" value = "Beijing Beef"/> Beijing Beef
+            <input type = "checkbox" name = "order3" value = "Kung Pao Chicken"/> Kung Pao Chicken
+            <br><br>
+            <h4 id = "sides">Sides</h4>
+            <input type = "checkbox" name = "order4" value = "White Rice"/> White Rice
+            <input type = "checkbox" name = "order4" value = "Brown Rice"/> Brown Rice
+            <br>
+            <input type = "checkbox" name = "order4" value = "Fried Rice"/> Fried Rice
+            <input type = "checkbox" name = "order4" value = "Chow Mein"/> Chow Mein
+            <br><br>
+            <h4 id = "drinks">Beverages</h4>
+            <input type = "checkbox" name = "order5" value = "Medium Drink"/> Medium Drink
+            <input type = "checkbox" name = "order5" value = "Large Drink"/> Large Drink
+            <br><br>
+            <input type = "submit" name = "enter" value = "Enter Order"/> </form>
+            
+            <h3 id = "subway">Subway</h3>
+            <h4 id = "six">6 Inch Sub</h4>
+            <form method = "post" action = "mobile_payment">
+            <input type = "checkbox" name = "order1" value = "Black Forst Ham"/> Black Forest Ham
+            <br>
+            <input type = "checkbox" name = "order1" value = "BLT"/> BLT
+            <br>
+            <input type = "checkbox" name = "order1" value = "Chicken & Bacon Ranch Melt"/> Chicken & Bacon Ranch Melt
+            <br>
+            <input type = "checkbox" name = "order1" value = "Italian BMT"/> Italian BMT
+            <br><br>
+            <h4 id = "twelve">12 Inch Sub</h4>
+            <input type = "checkbox" name = "order2" value = "Black Forest Ham"/> Black Forest Ham
+            <br>
+            <input type = "checkbox" name = "order2" value = "BLT"/> BLT
+            <br>
+            <input type = "checkbox" name = "order2" value = "Chicken & Bacon Ranch Melt"/> Chicken & Bacon Ranch Melt
+            <br>
+            <input type = "checkbox" name = "order2" value = "Italian BMT"/> Italian BMT
+            <br><br>
+            <h4 id = "wraps">Signature Wraps</h4>
+            <input type = "checkbox" name = "order3" value = "Chipotle Southwest Steak"/> Chipotle Southwest Steak
+            <br>
+            <input type = "checkbox" name = "order3" value = "Savory Rotisserie Style"/> Savoy Rotisserie Style
+            <br>
+            <input type = "checkbox" name = "order3" value = "Turkey Bacon Guac"/> Turkey Bacon Guac
+            <br><br>
+            <h4 id = "drinks">Beverages</h4>
+             <input type = "checkbox" name = "order4" value = "Medium Drink"/> Medium Drink
+                       <input type = "checkbox" name = "order4" value = "Large Drink"/> Large Drink
+                       <br><br>
+            <input type = "submit" name = "enter" value = "Enter Order"/> </form>
+            
+            <h3 id = "jambajuice">Jamba Juice</h3>
+            <h4 id = "smoothies">Smoothies</h4>
+            <form method = "post" action = "mobile_payment">
+            <input type = "checkbox" name = "order1" value = "Aloha Pineapple"/> Aloha Pineapple
+            <br>
+            <input type = "checkbox" name = "order1" value = "Mango-A-Go-Go"/> Mango-A-Go-Go
+            <br>
+            <input type = "checkbox" name = "order1" value = "Strawberry Surf"/> Strawberry Surf
+            <br>
+            <input type = "checkbox" name = "order1" value = "Strawberries Wild"/> Strawberries Wild
+            <br>
+            <input type = "checkbox" name = "order1" value = "White Gummi"/> White Gummi
+            <br>
+            <input type = "checkbox" name = "order1" value = "Orange Dream Machine"/> Orange Dream Machine
+            <br>
+            <input type = "checkbox" name = "order1" value = "Carribean Passion"/> Carribean Passion
+            <br><br>
+            <h4 id = "bowls">Bowls and Oatmeal</h4>
+            <input type = "checkbox" name = "order2" value = "Acai Primo"/>Acai Primo
+            <br>
+            <input type = "checkbox" name = "order2" value = "Chunky Strawberry"/>Chunky Strawberry
+            <br>
+            <input type = "checkbox" name = "order2" value = "Island Pitaya"/>Island Pitaya
+            <br>
+            <input type = "checkbox" name = "order2" value = "Nutty Almond Butter"/>Nutty Almond Butter
+            <br>
+            <input type = "checkbox" name = "order2" value = "Vanilla Blue Sky"/>Vanilla Blue Sky
+            <br><br>
+            <input type = "submit" name = "enter" value = "Enter Order"/> </form>
+            
+            <h3 id = "steaknshake">Steak n Shake</h3>
+            <h4 id = "burgers">Steakburgers</h4>
+                       <form method = "post" action = "mobile_payment">
+                       <input type = "checkbox" name = "order1" value = "Double Cheese Steakburger"/> Double Cheese Steakburger
+                       <br>
+                       <input type = "checkbox" name = "order1" value = "Single Cheese Steakburger"/> Single Cheese Steakburger
+                       <br>
+                       <input type = "checkbox" name = "order1" value = "Prime Steakburger"/> Prime Steakburger
+                       <br><br>
+                       <h4 id = "specials">Others</h4>
+                       <form method = "post" action = "mobile_payment">
+                       <input type = "checkbox" name = "order2" value = "Grilled Chicken Sandwich "/> Grilled Chicken Sandwich
+                       <br>
+                       <input type = "checkbox" name = "order2" value = "Chicken Fingers"/> Chicken Fingers
+                       <br>
+                       <input type = "checkbox" name = "order2" value = "Frisco Melt"/> Frisco Melt
+                       <br><br>
+                       <h4 id = "sides">Sides</h4>
+                       <form method = "post" action = "mobile_payment">
+                       <input type = "checkbox" name = "order3" value = "Cheese Fries"/> Cheese Fries
+                       <br>
+                       <input type = "checkbox" name = "order3" value = "Chili Cheese Fries"/> Chili Cheese Fries
+                       <br>
+                       <input type = "checkbox" name = "order3" value = "Bacon Cheese Fries"/> Bacon Cheese Fries
+                       <br><br>
+                       <h4 id = "drinks">Beverages</h4>
+                                   <input type = "checkbox" name = "order4" value = "Medium Drink"/> Medium Drink
+                                             <input type = "checkbox" name = "order4" value = "Large Drink"/> Large Drink
+                                             <br><br>
+                                  <input type = "submit" name = "enter" value = "Enter Order"/> </form>
+                      
+            <h3 id = "tacobell">Taco Bell</h3>
+            <h4 id = "party">Party Packs</h4>
+            <form method = "post" action = "mobile_payment">
+            <input type = "checkbox" name = "order1" value = "Taco Party Pack"/> Taco Party Pack
+            <br>
+            <input type = "checkbox" name = "order1" value = "Variety Taco Party Pack"/> Variety Taco Party Pack
+            <br>
+            <input type = "checkbox" name = "order1" value = "Taco + Burrito Party Pack"/> Taco + Burrito Party Pack
+            <br><br>
+            <h4 id = "burritos">Burritos</h4>
+            <input type = "checkbox" name = "order2" value = "Burrito Supreme"/> Burrito Supreme
+            <br>
+            <input type = "checkbox" name = "order2" value = "Shredded Chicken Burrito"/> Shredded Chicken Burrito
+            <br><br>
+            <h4 id = "special">Specialties</h4>
+            <input type = "checkbox" name = "order3" value = "Crunchwrap Supreme"/> Crunchwrap Supreme
+            <br>
+            <input type = "checkbox" name = "order3" value = "Quesadilla"/> Quesadilla
+            <br>
+            <input type = "checkbox" name = "order3" value = "Nachos Supreme"/> Nachos Supreme
+            <br><br>
+            <h4 id = "special">Tacos</h4>
+            <input type = "checkbox" name = "order4" value = "Tacos Supreme"/> Tacos Supreme
+            <br>
+            <input type = "checkbox" name = "order4" value = "Cheesy Gordita Crunch"/> Cheesy Gordita Crunch
+            <br>
+            <input type = "checkbox" name = "order4" value = "Chalupa Supreme"/> Chalupa Supreme
+            <br><br>
+            <h4 id = "drinks">Beverages</h4>
+            <input type = "checkbox" name = "order5" value = "Medium Drink"/> Medium Drink
+                       <input type = "checkbox" name = "order5" value = "Large Drink"/> Large Drink
+                       <br><br>
+            <input type = "submit" name = "enter" value = "Enter Order"/> </form>
+            
+            <h3 id = "starbucks">Starbucks</h3>
+            <h4 id = "espresso">Hot Espresso</h4>
+            <form method = "post" action = "mobile_payment">
+            <input type = "checkbox" name = "order1" value = "Caffe Americano"/> Caffe Americano
+            <br>
+            <input type = "checkbox" name = "order1" value = "Caffe Mocha"/> Caffe Mocha
+            <br>
+            <input type = "checkbox" name = "order1" value = "Cappuccino"/> Cappuccino
+            <br>
+            <input type = "checkbox" name = "order1" value = "Caffe Latte"/> Caffe Latte
+            <br>
+            <input type = "checkbox" name = "order1" value = "Caramel Macchiato"/> Caramel Macchiato
+            <br><br>
+            <h4 id = "fraps">Frappuccino</h4>
+            <input type = "checkbox" name = "order2" value = "Caramel Frappuccino"/> Caramel Frappuccino
+            <br>
+            <input type = "checkbox" name = "order2" value = "Coffee Frappuccino"/> Coffee Frappuccino
+            <br>
+            <input type = "checkbox" name = "order2" value = "Java Chip Frappuccino"/> Java Chip Frappuccino
+            <br>
+            <input type = "checkbox" name = "order2" value = "Mocha Frappuccino"/> Mocha Frappuccino
+            <br><br>
+            <h4 id = "refreshers">Refreshers</h4>
+            <input type = "checkbox" name = "order3" value = "Strawberry Acai"/> Strawberry Acai
+            <br>
+            <input type = "checkbox" name = "order3" value = "Very Berry Hibiscus"/> Very Berry Hibiscus
+            <br>
+            <input type = "checkbox" name = "order3" value = "Mango Dragonfruit"/> Mango Dragonfruit
+            <br><br>
+            <h4 id = "foods">Bakery</h4>
+            <input type = "checkbox" name = "order4" value = "Butter Croissant"/> Butter Croissant
+            <br>
+            <input type = "checkbox" name = "order4" value = "Cheese Danish"/> Cheese Danish
+            <br>
+            <input type = "checkbox" name = "order4" value = "Almond Croissant"/> Almond Croissant
+            <br><br>
+            <input type = "submit" name = "enter" value = "Enter Order"/> </form>
+    </body>
+    </div>
+</html>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+    <center>
+    <title>Payment</title>
+<body>
+    <div id = "white">
+        <h2>Order Confirmation</h2>
+        
+        <img src = "https://cdn1.iconfinder.com/data/icons/multimedia-isometric-5/32/isometric_multiedia_icon_set_32x32_px_for_icon_finder-01-512.png" height = "350"></img>
+        
+        <p>You selected these items for order and your local restaurant:
+        <br>Item 1: {{order1}}
+        <br>Item 2: {{order2}}
+        <br>Item 3: {{order3}}
+        <br>Item 4: {{order4}}
+        <br>Item 5: {{order5}}</p>
+        
+        <br>
+        <p>If these items are what you selected, click confirm purchase!</p>
+        <a href = "finish"><button type="button" class="btn btn-outline-primary">Confirm Purchase</button></a> </form>
+        
+
+    </div>
+    </body>
+</html>
+{% endblock %}

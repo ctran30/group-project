@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+    <center>
+    <title> Restaurants - LocalFoodie </title>
+    <p style = "font-family:sans-serif, helvetica; font-style: italic;">
+
+    <body>
+         <div id = "white">
+        <h2>List of Restaurants</h2>
+        
+        <img src = "https://www.pinclipart.com/picdir/big/368-3689842_online-food-and-restaurant-app-development-service-illustration.png" height = "200"></img>
+        
+        <p>In your requested location, these are available options:</p>
+        
+        <h2 id = "campus_food"><font color = "#3b5998">On-Campus Food</font></a></h2>
+            <p> The options on the SJSU campus are:</p>
+            <a href = "select_order#pandaexpress">Panda Express</a> <br>
+            <a href = "select_order#subway">Subway </a> <br>
+            <a href = "select_order#jambajuice">Jamba Juice </a> <br>
+            <a href = "select_order#steaknshake">Steak n Shake</a> <br>
+            <a href = "select_order#tacobell">Taco Bell</a> <br>
+            <a href = "select_order#starbucks">Starbucks</a> <br>
+            <div>
+                {% for campus_food in campus_food %}
+                {{campus_food}} <br>
+                {% endfor %}
+                </div>
+            </div>
+        </body>
+           </center>
+</html>
+{% endblock %}

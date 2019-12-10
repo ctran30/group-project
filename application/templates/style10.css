@@ -1,0 +1,19 @@
+# home
+body {
+  background-image: url("https://s3.envato.com/files/251613029/01.jpg");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+}
+
+h1 {
+       font-size:50;
+       color: rgb(25, 11, 88);
+       font-family:Noto Sans, 'Noto Sans', Helvetica, sans-serif;
+}
+
+h2 {
+      font-size:30;
+      color: rgb(83, 77, 65);
+      font-family:Helvetica, 'Helvetica', Helvetica, sans-serif;
+}
+

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+        <div id = "white">
+        <h2>Welcome, {{ current_user.username }}! </h2>
+        
+        <p>Finalize your settings.</p>
+        <br><br>
+        <img src = "https://cdn0.iconfinder.com/data/icons/travel-isometric/512/sim1555-512.png" height = "400"></img>
+        <br>
+        <p>Here, you can make/fix/finalize your settings.<br>
+        <p>Depending on your settings, we can find restaurants near you!</p>
+    <br>
+    
+    <form action = "/categories" method = "post">
+    <label for = "location">Location:</label>
+    <input type = "text" name = "location" required = "required"></br>
+    <br>
+    <label for = "radius">Radius of Distance (in miles):</label>
+    <input type = "number" name = "radius" required = "required"></br>
+    <br><br>
+    <input type = "checkbox" name = "save" value = "save"> Save Settings? <br><br>
+        <input type = "submit" name = "enter" value = "Continue"></a>
+
+        </form>
+     <a href = "home"><button type="button" class="btn btn-outline-primary">Back to home</button></a>
+        <br><br>
+    
+</div>
+</body>
+{% endblock %}

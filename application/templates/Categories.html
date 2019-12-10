@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+    <center>
+        <div id = "white">
+    <title> Categories - LocalFoodie </title>
+    <p style = "font-family:sans-serif, helvetica; font-style: italic;">
+    <body>
+        <h2>Categories of Restaurants</font></h2>
+    
+        <img src = "https://previews.123rf.com/images/toonsteb/toonsteb1702/toonsteb170200168/71900821-illustration-of-info-graphic-junk-food-concept-in-isometric-3d-graphic.jpg" height = "400"></img>
+        <br><br>
+        <p><strong>Congrats</strong> on successfully logging in and choosing your settings!<br><br>
+        However, before we send you to a list of restaurants to choose from,<br>
+        we have to make you choose a category because surely, <br>
+            you must have cravings for <i>something</i>, right?</p>
+    
+        <p><b>Your location is set to</b>: {{location}} <br>
+        <b>Your radius of distance (in miles) is set to</b>: {{radius}}</p>
+    
+            <p>These are the categories provided in <u>{{location}}</u>. <br>
+            Please pick one and we will recommend some restaurants.</p>
+            
+                <a href = "restaurants#campus_food">On-Campus Food</a>
+                <br>
+                <br>
+                <p>These few categories will be worked on in the future!</p>
+                <a href = "restaurants#viet">Vietnamese</a>
+                <br>
+                <a href = "restaurants#chinese">Chinese</a>
+                <br>
+                <a href = "restaurants#mex">Mexican</a>
+                <br>
+                <a href = "restaurants#fastfood">Fast Food</a>
+                <br>
+                <a href = "restaurants#quick">Quick Fixes</a>
+                <br>            
+        
+    </body>
+    </div>
+    </center>
+</html>
+{% endblock %}

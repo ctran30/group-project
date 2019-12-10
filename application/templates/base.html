@@ -1,0 +1,54 @@
+<html>
+<center>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <h1>
+        LocalFoodie
+    </h1>
+</head>
+<style>
+   
+body {
+  background-image: url("https://s3.envato.com/files/251613029/01.jpg");
+  background-repeat: repeat;
+  background-color: #cccccc;
+  }
+#white{
+    width: 700px;
+    height: 4500px;
+    background-color: white;
+    
+}
+
+
+        
+</style>
+
+<body class="bg-light">
+    <div class="d-flex justify-content-center">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Home</a></li>
+            {% if current_user.is_anonymous %}
+            <li class="breadcrumb-item"><a href="{{ url_for('login') }}">Login</a></li>
+            {% else %}
+            <li class="breadcrumb-item"><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% endif %}
+            <li class="breadcrumb-item"><a href="{{ url_for('register') }}">Register</a></li>
+             <li class="breadcrumb-item"><a href="{{ url_for('notifs') }}">Notifications</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('location') }}">Location</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('categories') }}">Categories</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('restaurants') }}">Restaurant</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('select_order') }}">Select Orders</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('feed_back') }}">Feedback</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('mobile_payment') }}">Order Confirmation</a></li>
+        </ol>
+    </nav>
+    </div>
+</body>
+{% block content %}
+{% endblock %}
+</center>
+</html>
